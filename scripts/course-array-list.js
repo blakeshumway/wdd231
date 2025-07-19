@@ -78,7 +78,7 @@ const courses = [
     }
 ]
 
-document.addEventListener('DOMContentLoaded', function () {
+
 
     const container = document.getElementById('course-container');
     const total = document.getElementById(`credit-total`);
@@ -90,13 +90,17 @@ document.addEventListener('DOMContentLoaded', function () {
         // Clear existing cards
         container.innerHTML = "";
 
-        let totalCredits = 0;
+        //let totalCredits = 0;
 
+
+        
         filteredCourses.forEach(course => {
             const card = document.createElement('div');
+
+            
             if (course.completed) {
                 card.className = 'completed-card';
-                totalCredits += course.credits;
+                //totalCredits += course.credits;
                 card.innerHTML = `<h3>✓ ${course.subject} ${course.number}</h3>`;
                 container.appendChild(card);
             }
@@ -108,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         });
 
-        total.textContent = `Total Credits Completed: ${totalCredits}`;
+        total.textContent = `The total credits for course listed above is ${totalCredits}`;
     }
 
     //buttons
@@ -138,5 +142,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById("currentYear").innerHTML = ` ${year}`;
     document.getElementById("lastModified").innerHTML = `Last Modified ${lastModifiedDate}`;
-});
+
 
