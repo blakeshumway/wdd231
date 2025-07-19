@@ -86,7 +86,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #025d9a;
+    background-color: #024876;
 }
 
 .navigation a:hover {
@@ -101,7 +101,6 @@ h1 {
 
 /*Main*/
 main {
-
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -124,18 +123,19 @@ h2 {
 
 .about-me p {
     font-size: 20px;
-    padding: 10px;
+    padding: 20px;
+    line-height: 1.6;
 }
 
 .student-photo {
-    display: grid;
-    justify-content: center;
+    display: block;
+   text-align: center;
     background-color: #e6f3fe;
-
 }
 
 .student-photo img {
     padding: 10px;
+
 }
 
 .web-certificates p {
