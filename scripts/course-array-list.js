@@ -97,16 +97,18 @@ document.addEventListener('DOMContentLoaded', function () {
             if (course.completed) {
                 card.className = 'completed-card';
                 totalCredits += course.credits;
+                card.innerHTML = `<h3>✓ ${course.subject} ${course.number}</h3>`;
+                container.appendChild(card);
             }
             else {
                 card.className = 'card';
+                card.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+                container.appendChild(card);
             }
 
-            card.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
-            container.appendChild(card);
         });
 
-        total.textContent = `Total Completed Credits: ${totalCredits}`;
+        total.textContent = `Total Credits Completed: ${totalCredits}`;
     }
 
     //buttons
