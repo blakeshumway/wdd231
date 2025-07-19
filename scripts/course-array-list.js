@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +77,64 @@ const courses = [
         completed: false
     }
 ]
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const container = document.getElementById('course-container');
+    const total = document.getElementById(`credit-total`);
+    //filter array
+    const cseCourses = courses.filter(course => course.subject === "CSE");
+    const wddCourses = courses.filter(course => course.subject === "WDD");
+
+    function renderCourses(filteredCourses) {
+        // Clear existing cards
+        container.innerHTML = "";
+
+        let totalCredits = 0;
+
+        filteredCourses.forEach(course => {
+            const card = document.createElement('div');
+            if (course.completed) {
+                card.className = 'completed-card';
+                totalCredits += course.credits;
+            }
+            else {
+                card.className = 'card';
+            }
+
+            card.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+            container.appendChild(card);
+        });
+
+        total.textContent = `Total Completed Credits: ${totalCredits}`;
+    }
+
+    //buttons
+    document.getElementById('all-btn').addEventListener('click', () => {
+        renderCourses(courses)
+    })
+    document.getElementById('cse-btn').addEventListener('click', () => {
+        renderCourses(cseCourses)
+    })
+    document.getElementById('wdd-btn').addEventListener('click', () => {
+        renderCourses(wddCourses)
+    })
+
+
+    // Show everything on initial load
+    renderCourses(courses);
+
+    //date and copyright
+
+    //get current date
+    const date = new Date();
+    //get the year
+    const year = date.getFullYear();
+
+    //store last date modification
+    const lastModifiedDate = document.lastModified;
+
+    document.getElementById("currentYear").innerHTML = ` ${year}`;
+    document.getElementById("lastModified").innerHTML = `Last Modified ${lastModifiedDate}`;
+});
+

@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arimo, sans-serif;
+}
+
+p {
+    font-family: Arimo, sans-serif;
+}
+
+
 /********Header*********/
 header {
     display: grid;
@@ -10,6 +24,7 @@ header {
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
+
 }
 
 header img {
@@ -45,6 +60,7 @@ header span {
 /*** NAVIGATION *****/
 .navigation {
     display: none;
+    background-color: #006eb6;
 }
 
 .navigation.show {
@@ -60,7 +76,7 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: orange;
+    color: white;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
@@ -75,13 +91,12 @@ header span {
 
 h1 {
     margin-left: 10px;
+
 }
 
-/*main*/
 /*Main*/
 main {
-    border-style: solid;
-    border-color: green;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -90,17 +105,97 @@ main {
 
 h2 {
     text-align: center;
-    background-color: blue;
-
+    background-color: #006eb6;
+    color: white;
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 30px;
 }
 
-section {
-    border-style: solid;
-    border-color: red;
 
+
+section {}
+
+.about-me {
+    background-color: #e6f3fe;
 }
 
 .student-photo {
     display: grid;
     justify-content: center;
+    background-color: #e6f3fe;
+
+}
+
+.student-photo img {
+    padding: 10px;
+}
+
+.web-certificates p {
+    text-align: center;
+}
+
+.certificate-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.certificate-btns button {
+    width: 7rem;
+}
+
+.course-container {
+    display: grid;
+    gap: 10px;
+}
+
+.card {
+    display: block;
+    text-align: center;
+    border: 2px solid #00aaff;
+    border-radius: 4px;
+}
+
+.completed-card {
+    display: block;
+    text-align: center;
+    background-color: red;
+    border: 2px solid #00aaff;
+    border-radius: 4px;
+}
+
+/*****Footer*****/
+footer {
+    background-color: #e6f3fe;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 4px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
 }

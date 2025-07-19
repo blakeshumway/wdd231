@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="WDD 231 Index Page">
+    <meta name="author" content="Blake Shumway">
 
     <!--Style Sheet Here-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/course-array-list.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <header>
         <img src="images/home.svg" alt="Site Logo" width="512" height="512">
-        <span>Blakes Site Title</span>
+        <span>Blake Shumway</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
 
@@ -23,7 +31,7 @@
         <ul>
             <li><a href="current">Home</a></li>
             <li class="#"><a href="#">Chamber Project</a></li>
-            <li><a href ="#">Final Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
 
     </nav>
@@ -33,14 +41,23 @@
 
         <section class="about-me">
             <h2>About Me</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum consequatur, distinctio error, at placeat obcaecati omnis itaque quas vero necessitatibus perferendis minus fugiat veniam doloribus ex eaque qui! Dolorum?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum consequatur, distinctio
+                error, at placeat obcaecati omnis itaque quas vero necessitatibus perferendis minus fugiat veniam
+                doloribus ex eaque qui! Dolorum?</p>
         </section>
         <section class="student-photo">
             <h2>Student Photo</h2>
-            <img src="images/student-photo.jpg" alt="Student photo" height="300px">
+            <img src="images/student-photo.jpg" alt="Student photo">
         </section>
         <section class="web-certificates">
             <h2>Web Certificate Courses</h2>
+            <div id="certificate-btns" class="certificate-btns">
+                <button id="all-btn">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </div>
+            <div id="course-container" class="course-container"></div>
+            <p id="credit-total"></p>
         </section>
     </main>
 
@@ -50,11 +67,16 @@
             <a href="" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
             <a href="" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
         </div>
-        <p>Copyright</p>
-        <p>Last Modified</p>
+
+        <p>
+            &copy;<span id="currentYear"></span> | Blake Shumway | Oklahoma, USA
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
 
     </footer>
 
-    <script src="scripts/navigation.js"></script>
 </body>
+
 </html>
