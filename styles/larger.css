@@ -4,6 +4,10 @@
         margin: 0 auto;
     }
 
+    body {
+        margin: 0 10px;
+    }
+
     /*header and navigation bar*/
     header {
         grid-template-columns: 24px auto;
@@ -25,6 +29,9 @@
     .navigation a{
         border: none;
     }
+
+
+
 
     /*Main*/
 
