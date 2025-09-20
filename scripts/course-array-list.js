@@ -87,13 +87,6 @@ const cseCourses = courses.filter(course => course.subject === "CSE");
 const wddCourses = courses.filter(course => course.subject === "WDD");
 
 
-
-
-
-
-
-
-
 function renderCourses(filteredCourses) {
     // Clear existing cards
     container.innerHTML = "";
