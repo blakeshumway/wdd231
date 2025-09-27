@@ -199,10 +199,10 @@ footer p {
 
 /* buttons */
 .directory-buttons {
-  display: flex;
-  gap: 2rem; 
-  margin: 20px 0;
-  justify-content: center;
+    display: flex;
+    gap: 2rem; 
+    margin: 20px 0;
+    justify-content: center;
 }
 
 .directory-buttons button {
