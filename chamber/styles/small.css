@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arimo, sans-serif;
+}
+
+p {
+    font-family: Arimo, sans-serif;
+}
+
+
+
+/********Header*********/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 15px 0 15px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/**********Hamburger Navigation*********/
+.hamburger {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/*** NAVIGATION *****/
+.navigation {
+    display: none;
+    background-color: #004973;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.navigation li.current {
+    background-color: #00729b;
+}
+
+.navigation a:hover {
+    background-color: #98a501;
+}
+
+h1 {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*Main*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    
+}
+
+
+
+/*****Footer*****/
+footer {
+    background-color: #004973;
+    padding: 1rem 10px;
+    color: white;
+    
+}
+
+footer p {
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 88px;
+
+    border-radius: 4px;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/*Directory specific*/
+#members-container {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.list-view {
+    display: block;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    
+    
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.member-card h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.grid-view .member-card {
+    margin: 2rem;
+}
+
+.list-view .member-card {
+    display: grid;
+    
+    align-items: left;
+    gap: 0.5rem 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.list-view .member-card img {
+    display: none;
+}
+

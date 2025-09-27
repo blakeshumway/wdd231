@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Cattopia",
+        "address": "123 Linsey st, Norman, OK",
+        "phone": "405-127-4567",
+        "website": "https://www.Cattopia.net",
+        "image": "cattopia.svg",
+        "membership": 3,
+        "description": "A local charity dedicated to using cats to help resident of Oklahoma deal with their pest problems."
+    },
+    {
+        "name": "Mountainair",
+        "address": "782 Oakwood rd, Edmond, OK",
+        "phone": "405-785-2642",
+        "website": "https://www.Mountainair.com",
+        "image": "mountainair.svg",
+        "membership": 2,
+        "description": ""
+    },
+    {
+        "name": "Targotten",
+        "address": "893 3rd St, Moore, OK",
+        "phone": "405-107-6959",
+        "website": "https://www.Targotten.com",
+        "image": "targotten.svg",
+        "membership": 2,
+        "description": ""
+    },
+    {
+        "name": "Benchco",
+        "address": "321 real st, Tulsa, OK",
+        "phone": "405-555-5555",
+        "website": "https://www.Benchco.com",
+        "image": "benchco.svg",
+        "membership": 3,
+        "description": ""
+    },
+    {
+        "name": "Spectorpe",
+        "address": "505 silver rd, Tulsa, OK",
+        "phone": "405-123-4567",
+        "website": "https://www.Spectorpe.com",
+        "image": "spectorpe.svg",
+        "membership": 1,
+        "description": ""
+    },
+    {
+        "name": "Lundour",
+        "address": "101 Yumyum rd, Norman, OK",
+        "phone": "405-111-2222",
+        "website": "https://www.lundour.com",
+        "image": "lundour.svg",
+        "membership": 1,
+        "description": ""
+    },
+    {
+        "name": "Boxmizer",
+        "address": "890 donavon st, Edmond, OK",
+        "phone": "405-456-3210",
+        "website": "https://www.Boxizer.net",
+        "image": "boxmizer.svg",
+        "membership": 2,
+        "description": ""
+    }
+]

@@ -1,0 +1,69 @@
+@media only screen and (min-width: 41rem) {
+    header, main, nav, footer {
+        max-width: 95rem;
+        margin: 0 auto;
+    }
+
+    body {
+        margin: 0 10px;
+    }
+
+    /*header and navigation bar*/
+    header {
+        grid-template-columns: 3rem auto;
+    }
+    header span {
+        align-self: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+    .navigation a{
+        border: none;
+    }
+
+    /*Main*/
+
+    main {
+        padding: 0px;
+        margin: 10px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+
+    /*Footer*/
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        column-gap: 3rem;
+    }
+
+/*Directory*/
+.grid-view {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 1rem;
+}
+
+.list-view .member-card {
+    grid-template-columns: 2fr 2fr 1.5fr 2fr 1fr;
+}
+
+
+}
+
+
