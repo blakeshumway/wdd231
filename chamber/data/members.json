@@ -24,7 +24,7 @@
         "website": "https://www.Targotten.com",
         "image": "targotten.svg",
         "membership": 2,
-        "description": ""
+        "description": "Oklahomas biggest target provider, dedicated to ensuring high quality targets and bullseyes for any occasion!"
     },
     {
         "name": "Benchco",
@@ -33,7 +33,7 @@
         "website": "https://www.Benchco.com",
         "image": "benchco.svg",
         "membership": 3,
-        "description": ""
+        "description": "Founded in 1930 Benchco has installed over 100,000 benches in Oklahoma! We're dedicated to providing a place to rest!"
     },
     {
         "name": "Spectorpe",
@@ -41,8 +41,8 @@
         "phone": "405-123-4567",
         "website": "https://www.Spectorpe.com",
         "image": "spectorpe.svg",
-        "membership": 1,
-        "description": ""
+        "membership": 2,
+        "description": "If you are in need of a new set of glasses visit your local Spectorpe! Were a Oklahoma based store whose mission it is to provide glasses to those in need!"
     },
     {
         "name": "Lundour",
@@ -51,7 +51,7 @@
         "website": "https://www.lundour.com",
         "image": "lundour.svg",
         "membership": 1,
-        "description": ""
+        "description": "In 1983 the first Lundour office building was built in Norman to sell paper to the local community. Today over 100 locations are scattered over all of Oklahoma providing local commmunitys access to affordable paper!"
     },
     {
         "name": "Boxmizer",
@@ -60,6 +60,6 @@
         "website": "https://www.Boxizer.net",
         "image": "boxmizer.svg",
         "membership": 2,
-        "description": ""
+        "description": "We here at Boxmizer believe if you want something shipped you go any other delivery service, but if you want it shipped right you come to Boxmizer."
     }
 ]
