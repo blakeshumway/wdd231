@@ -181,9 +181,13 @@ footer p {
     margin-bottom: 0.2em;
 }
 
+
 .grid-view .member-card {
     margin: 2rem;
+    
 }
+
+
 
 .list-view .member-card {
     display: grid;
@@ -191,6 +195,12 @@ footer p {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
     text-align: left;
+    grid-template-columns: 2fr 2fr 1.5fr 2fr 1fr;
+    font-size: .6rem;
+    align-items: center;
+}
+.member-card h2 {
+    font-size: 1rem;
 }
 
 .list-view .member-card img {
