@@ -183,8 +183,6 @@ footer p {
 
 .list-view .member-card {
     display: grid;
-    
-    align-items: left;
     gap: 0.5rem 1rem;
     padding: 1rem;
     border-bottom: 1px solid #ccc;
