@@ -137,7 +137,6 @@ footer p {
     align-items: center;
     width: 88px;
     height: 88px;
-
     border-radius: 4px;
 }
 
@@ -167,8 +166,6 @@ footer p {
     border-radius: 8px;
     background-color: #f9f9f9;
     text-align: center;
-    
-    
 }
 
 .member-card img {

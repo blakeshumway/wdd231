@@ -13,48 +13,47 @@ async function getMemberData() {
 //display data
 const displayMembers = (members) => {
   members.forEach((member) => {
-    //create card 
-    const card = document.createElement('section');
-    card.classList.add('member-card');
+      //create card 
+      const card = document.createElement('section');
+      card.classList.add('member-card');
 
-    //create elements
-    const name = document.createElement('h2');
-    name.textContent = member.name;
+      //create elements
+      const name = document.createElement('h2');
+      name.textContent = member.name;
 
-    const address = document.createElement('p');
-    address.textContent = `${member.address}`;
+      const address = document.createElement('p');
+      address.textContent = `${member.address}`;
 
-    const phone = document.createElement('p');
-    phone.textContent = `${member.phone}`;
+      const phone = document.createElement('p');
+      phone.textContent = `${member.phone}`;
 
-    const website = document.createElement('a');
-    website.href = member.website;
-    website.textContent = member.website;
+      const website = document.createElement('a');
+      website.href = member.website;
+      website.textContent = member.website;
     
+      const membership = document.createElement('p');
+      const levels = ['', 'Member', 'Silver', 'Gold'];
+      membership.textContent = `Membership: ${levels[member.membership]}`;
 
-    const membership = document.createElement('p');
-    const levels = ['', 'Member', 'Silver', 'Gold'];
-    membership.textContent = `Membership: ${levels[member.membership]}`;
+      const description = document.createElement('p');
+      description.textContent = member.description;
 
-    const description = document.createElement('p');
-    description.textContent = member.description;
+      const image = document.createElement('img');
+      image.setAttribute('src', `images/${member.image}`);
+      image.setAttribute('alt', `${member.name} Logo`);
+      image.setAttribute('loading', 'lazy');
+      image.setAttribute('width', '150');
 
-    const image = document.createElement('img');
-    image.setAttribute('src', `images/${member.image}`);
-    image.setAttribute('alt', `${member.name} Logo`);
-    image.setAttribute('loading', 'lazy');
-    image.setAttribute('width', '150');
-
-    //append everything to card
-    card.appendChild(image);
-    card.appendChild(name);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(website);
-    card.appendChild(membership);
+      //append everything to card
+      card.appendChild(image);
+      card.appendChild(name);
+      card.appendChild(address);
+      card.appendChild(phone);
+      card.appendChild(website);
+      card.appendChild(membership);
 
     
-    membersContainer.appendChild(card);
+      membersContainer.appendChild(card);
   });
 };
 
