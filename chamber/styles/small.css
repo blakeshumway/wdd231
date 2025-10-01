@@ -229,8 +229,8 @@ footer p {
 
 /* HOME PAGE */
 
+/* Position and center the image to scale nicely on all screens */
 .hero-container {
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,7 +254,7 @@ footer p {
 }
 
 .hero-text h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #004973;
     text-shadow:
     -1px -1px 0 white,
@@ -262,6 +262,11 @@ footer p {
     -1px  1px 0 white,
      1px  1px 0 white;
 }
+
+.hero-text p {
+    font-size: 1rem;
+}
+
 
 .hero-text a {
     text-decoration: none;
@@ -279,15 +284,23 @@ footer p {
 /* Home container */
 .home-container {
   display: grid;
-  
-  gap: 20px; /* optional spacing between columns */
-  
+  gap: 20px; 
 }
 
 .home-container section {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
+    
+}
+
+.home-container section h2 {
+    background-color: #004973;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    margin-top: 0px;
+    padding: 10px;
 }
 
 .current-events-card {
@@ -307,6 +320,10 @@ footer p {
 
 
 /* spotlight */
+
+.spotlight {
+    text-align: center;
+}
 
 #spotlight-container {
     display: grid;

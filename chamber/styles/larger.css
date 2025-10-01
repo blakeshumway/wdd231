@@ -81,6 +81,9 @@
     font-size: 2.5rem;
     text-align: center;
 }
+.hero-text p {
+    font-size: 1.5rem;
+}
 
 .hero-text a {
     text-decoration: none;
@@ -94,14 +97,18 @@
 /* Home container */
 .home-container {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr; /* Section 1 is twice as wide */
-  gap: 20px; /* optional spacing between columns */
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
   
 }
 
 
 
 /* spotlight */
+
+.spotlight{
+    text-align: left;
+}
 
 #spotlight-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
