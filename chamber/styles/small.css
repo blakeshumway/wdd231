@@ -15,7 +15,7 @@ h6 {
 p {
     font-family: Arimo, sans-serif;
 }
-button {
+button, a {
     font-family: Arimo, sans-serif;
 }
 
@@ -181,7 +181,6 @@ footer p {
 
 .grid-view .member-card {
     margin: 2rem;
-    
 }
 
 
@@ -228,5 +227,108 @@ footer p {
     background-color: #98a501; 
 }
 
+/* HOME PAGE */
+
+.hero-container {
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 1rem;
+    color: #004973;
+    text-shadow:
+    -1px -1px 0 white,
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+.hero-text a {
+    text-decoration: none;
+    color: white;
+    background-color: #004973;
+    padding: 10px;
+    font-size: .75rem;
+    border-radius: 10px;
+}
+
+.hero-text a:hover {
+    background-color: #98a501; 
+}
+
+/* Home container */
+.home-container {
+  display: grid;
+  
+  gap: 20px; /* optional spacing between columns */
+  
+}
+
+.home-container section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.current-events-card {
+    text-align: center;
+}
+
+.current-weather-card {
+    text-align: center;
+}
+
+.forecast-card {
+    text-align: center;
+}
 
 
+
+
+
+/* spotlight */
+
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 50%;
+    height: auto;
+}
+
+.spotlight-card h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}

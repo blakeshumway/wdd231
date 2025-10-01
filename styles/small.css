@@ -42,6 +42,7 @@ header span {
 
 }
 
+
 /**********Hamburger Navigation*********/
 .hamburger {
     background: none;
@@ -217,3 +218,6 @@ footer p {
 .social a:hover {
     background-color: #ddd;
 }
+
+
+
