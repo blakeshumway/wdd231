@@ -100,7 +100,6 @@ function renderCourses(filteredCourses) {
     filteredCourses.forEach(course => {
         const card = document.createElement('div');
 
-
         if (course.completed) {
             card.className = 'completed-card';
             //totalCredits += course.credits;
@@ -117,6 +116,10 @@ function renderCourses(filteredCourses) {
 
     total.textContent = `The total credits for course listed above is ${totalCredits}`;
 }
+
+
+
+
 
 //buttons
 document.getElementById('all-btn').addEventListener('click', () => {
