@@ -3,16 +3,16 @@ const myInfo = new URLSearchParams(window.location.search);
 console.log(myInfo);
 
 document.querySelector('#results').innerHTML = `
-<p>First Name: ${myInfo.get('first')}</p>
-<p>Last Name:  ${myInfo.get('last')}</p>
-<p>Title: ${myInfo.get('title')}</p> 
-<p>Email: ${myInfo.get('email')}</p>
-<p>Cell Phone: ${myInfo.get('phone')}</p>
-<p>Organization Name: ${myInfo.get('organization')}</p>
-<p>Membership Level: ${myInfo.get('membership')}</p>
-<p>Organization Description:</p>
-<p>${myInfo.get('organization-description')}</p>
+<p><strong>First Name: </strong>${myInfo.get('first')}</p>
+<p><strong>Last Name: </strong>${myInfo.get('last')}</p>
+<p><strong>Title: </strong>${myInfo.get('title')}</p> 
+<p><strong>Email: </strong>${myInfo.get('email')}</p>
+<p><strong>Cell Phone: </strong>${myInfo.get('phone')}</p>
+<p><strong>Organization Name: </strong>${myInfo.get('organization')}</p>
+<p><strong>Membership Level: </strong>${myInfo.get('membership')}</p>
+<p><strong>Organization Description: </strong></p>
+<p class="org-description">${myInfo.get('organization-description')}</p>
 
-<p>Date Submitted: ${myInfo.get('timestamp')}</p>
+<p><strong>Date Submitted: </strong>${myInfo.get('timestamp')}</p>
 
 `;

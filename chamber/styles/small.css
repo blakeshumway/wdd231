@@ -410,6 +410,10 @@ input:required {border-left-color: #d70000;}
 input:focus {border-left-color: black; outline:none;}
 input:required:valid{border-left-color: green;}
   
+select:required {border-left-color: #d70000;}
+select:focus {border-left-color: black; outline:none;}
+select:required:valid{border-left-color: green;}
+
 input[type=submit] {
     border: none;
     text-align: center;
@@ -437,10 +441,30 @@ input:-webkit-autofill{
 
   /* Thank you */
 #results {
-    background-color: #F4F1DE;
+    background-color: #f9f9f9;
     padding: 0 1rem;
-    border: 1px solid #E07A5F;
+    border: 1px solid #ccc;
     border-radius: 6px;
+    font-size: 1.3rem;
+    text-align: left;
+    max-width: 450px;
+    justify-self: center;
+}
+/* for description overflow */
+.org-description {
+    word-wrap: break-word;       
+    overflow-wrap: break-word;
+    white-space: normal;         
+}
+
+.thank-you {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.thank-you h1 {
+    text-align: center;
 }
 
   /*Modals*/
@@ -464,7 +488,7 @@ input:-webkit-autofill{
     animation-delay: 0.4s;
 }
 .membership-card:nth-child(4) {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 .membership-card:nth-child(5) {
     animation-delay: 0.8s;
@@ -518,16 +542,19 @@ input:-webkit-autofill{
   }
 }
 
-  ::backdrop {
+::backdrop {
     background: rgb(0 0 0 / 70%);
-  }
+}
 
-  dialog[open] {
-  min-width: 300px;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid rgb(0 0 0 / 0.1);
-  display: grid;
+dialog[open] {
+    min-width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    display: grid;
+}
+dialog[open] h2 {
+    text-align: center;
+    font-size: 2rem;
 }
 .close-button-np,.close-button-bronze, .close-button-silver, .close-button-gold {
     position: absolute;
