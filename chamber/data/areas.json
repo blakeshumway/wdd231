@@ -1,0 +1,50 @@
+[
+    {
+        "image": "oklahoma-national-memorial.webp",
+        "name": "Oklahoma City National Memorial & Museum",
+        "address": "620 N Harvey Ave, Oklahoma City, OK 73102",
+        "description": "The Oklahoma City National Memorial is a memorial site in Oklahoma City, Oklahoma, United States, that honors the victims, survivors, rescuers, and all who were affected by the Oklahoma City bombing on April 19, 1995."
+    },
+    {
+        "image": "cowboy-museum.webp",
+        "name": "the National Cowboy & Western Heritage Museum",
+        "address": "1700 NE 63rd St, Oklahoma City, OK 73111",
+        "description": "The National Cowboy & Western Heritage Museum is a museum in Oklahoma City, Oklahoma, United States, with more than 28,000 Western and Native American art works and artifacts."
+    },
+    {
+        "image": "bricktown.webp",
+        "name": "Bricktown Entertainment District",
+        "address": "111 S Mickey Mantle Dr, Oklahoma City, OK 73104",
+        "description": "Bricktown is Oklahoma City's historic former warehouse district, transformed into a vibrant entertainment area with a navigable canal."
+    },
+    {
+        "image": "route-66.webp",
+        "name": "Oklahoma Route 66 Museum",
+        "address": "2229 W Gary Blvd, Clinton, OK 73601",
+        "description": "A look at the history, myths, signs, photos & music of the iconic road, plus a diner replica."
+    },
+    {
+        "image": "wichita-wildlife.webp",
+        "name": "Wichita Mountains Wildlife Refuge",
+        "address": "32 Refuge Headquarters Road, Indiahoma, OK 73552",
+        "description": "Wichita Mountains Wildlife Refuge, located in southwestern Oklahoma near Lawton, has protected unique wildlife habitats since 1901 and is the oldest managed wildlife facility in the United States Fish and Wildlife Service system."
+    },
+    {
+        "image": "philbrook-art.webp",
+        "name": "Philbrook Museum of Art",
+        "address": "2727 S Rockford Rd, Tulsa, OK 74114",
+        "description": "An art museum with expansive formal gardens located in Tulsa, Oklahoma. The museum, which opened in 1939, is located in a former 1920s villa, Villa Philbrook, the home of Oklahoma oil pioneer Waite Phillips and his wife Genevieve."
+    },
+    {
+        "image": "first-americans-museum.webp",
+        "name": "First Americans Museum",
+        "address": "659 First Americans Blvd, Oklahoma City, OK 73129",
+        "description": "A museum made to serve as a dynamic center promoting awareness and educating the broader public about the unique cultures, diversity, history, contributions, and resilience of the First American Nations in Oklahoma today."
+    },
+    {
+        "image": "scenic-byway.webp",
+        "name": "Talimena National Scenic Byway",
+        "address": "OK-1 Scenic, Talihina, OK 74571",
+        "description": "A scenic drive through the Ouachita National Forest featuring sweeping mountain vistas, hiking trails and campgrounds."
+    }
+]

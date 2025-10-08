@@ -571,3 +571,98 @@ dialog[open] h2 {
 .close-button-np:hover, .close-button-bronze:hover, .close-button-silver:hover, .close-button-gold:hover{
     background-color: #bfbebe;
 }
+
+/* DISCOVER PAGE */
+#areas-container {
+    display: grid;
+}
+
+#areas-container div{
+    display: grid;
+    grid-template-areas: 
+    "photograph"
+    "name"
+    "description"
+    "location"
+    "button";
+}
+
+#areas-container div h2 {
+    grid-area: name;
+}
+
+#areas-container div figure {
+    grid-area: photograph;
+}
+
+#areas-container div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#areas-container div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+#areas-container div button {
+    margin: 1rem 10px;
+    grid-area: button;
+}
+
+
+
+.area-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 2rem;
+
+}
+
+.area-card h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.area-card img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #bfbebe;
+}
+
+.area-card p {
+    grid-area: description;
+}
+
+.area-card button {
+    border: none;
+    text-align: center;
+    background-color: #004973;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.area-card button:hover {
+    background-color: #98a501; 
+}
+
+
+#welcome-message {
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 2rem;
+    
+    justify-self: center;
+}
+
