@@ -42,10 +42,12 @@ header {
 
 
 
-header h1 {
+header span {
     color: white;
     font-weight: bold;
     text-align: left;
+    font-size: 3rem;
+    padding: 1rem;
 }
 
 /**********Hamburger Navigation*********/
