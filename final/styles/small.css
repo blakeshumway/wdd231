@@ -297,6 +297,40 @@ footer p {
 
 /******HACKS PAGE*******/
 
+.rom-info-container {
+    display: grid;
+    grid-template-areas: 
+    "rom-image"
+    "rom-info"
+    ;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.rom-info-container p {
+    grid-area: rom-info;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    width: 100%; 
+    text-align: center;
+    
+}
+
+.rom-info-container img {
+    grid-area: rom-image;
+    border: 5px solid #18251D;
+    max-width: 300px;
+    justify-self: center;
+}
+
+
+
+
 .buttons-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -530,6 +564,7 @@ form {
     padding: 1rem;
     border-radius: 16px;
     max-width: 700px;
+    width: 100%;
     display: grid;
     justify-content: center;
 }

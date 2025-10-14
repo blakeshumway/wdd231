@@ -6,18 +6,36 @@
     display: flex;
     margin: 5rem;
     
-}   
+    }   
 
 
     /****HACKS PAGE****/
     #rom-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    margin: 5rem;
+        grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+        margin: 5rem;
     
-}   
+    }   
 
 
-/***TOOLS PAGE***/
+    .rom-info-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .rom-info-container p {
+        font-size: 1.75rem;
+        height: 300px;
+        
+    }   
+
+
+    .rom-info-container img {
+        max-width: 300px;
+    }
+
+
+
+    /***TOOLS PAGE***/
 
     .about-container {
         display: grid;
