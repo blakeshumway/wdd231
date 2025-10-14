@@ -100,29 +100,6 @@
 
     }
 
-    .rom-info-container {
-        display: grid;
-        grid-template-areas: 
-        "rom-image rom-info"
-        ;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    .rom-info-container p {
-        text-align: left;
-        height: 200px;
-        font-size: 1.1rem;
-        padding: 5%
-    }
-
-    .rom-info-container img {
-        max-width: 200px;
-        min-width: 150px;
-    }
-
-
-
 
     .newsletter {
         width: 500px;

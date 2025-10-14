@@ -20,12 +20,16 @@
     .rom-info-container {
         margin-left: 5rem;
         margin-right: 5rem;
+        grid-template-areas: 
+        "rom-image rom-info"
+        ;
     }
 
     .rom-info-container p {
         font-size: 1.75rem;
         height: 300px;
-        
+        max-width: 1000px;
+        padding: 5%;
     }   
 
 
