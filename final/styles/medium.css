@@ -1,0 +1,146 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        margin: 0 auto;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+       font-size: 2rem; 
+    }
+
+    /*header and navigation bar*/
+    header {
+        grid-template-columns: 3rem auto;
+        border-bottom: 0px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #FAF2F0;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /*Main*/
+
+    main {
+        margin: 10px;
+    }
+
+
+
+    /*Footer*/
+
+    
+
+    /*****INDEX*****/
+
+
+.hero-text h1 {
+    font-size: 5rem;
+}
+
+.hero-text p {
+    font-size: 2rem;
+}
+
+
+.hero-text a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+
+
+    .news-container {
+    display: grid;
+    grid-template-areas: 
+    "news hacks"
+    "news tools"
+    ;
+    margin: 4rem;
+    }   
+
+    /***SPOTLIGHT*****/
+    /*SPOTLIGHT*/
+    .spotlight-container {
+        gap: 1rem; /* spacing between items */
+    }   
+
+    /****HACKS PAGE****/
+    #rom-container {
+        grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
+        margin: 5rem;
+
+    }
+
+
+    .newsletter {
+        width: 500px;
+    }
+
+
+    /****TOOLS*****/
+   
+
+    /***TOOLS PAGE***/
+    .about-container p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    
+    }
+
+
+
+
+    .tools {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+  
+
+
+    /*newsletter container*/
+    .newsletter-container {
+        display: grid;
+        grid-template-areas: 
+        "sign-up promote"
+        ;
+    }
+
+
+
+
+
+
+}

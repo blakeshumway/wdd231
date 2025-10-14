@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--favicon-->
+    <link rel="icon" href="images/favicon-final.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokehackia - Info & Tools</title>
+    <meta name="description" content="Pokehackia Home Page">
+    <meta name="author" content="Blake Shumway">
+    <!--Social Media Meta-->
+    <meta property="og:description" content="The Info & Tools page for Pokehackia.">
+    <meta property="og:image" content="https://blakeshumway.github.io/wdd231/final/images/favicon-final.ico">
+    <meta property="og:url" content="https://blakeshumway.github.io/wdd231/final/tools.html">
+    <meta property="og:title" content="Info & Tools - Pokehackia">
+    <!--Style Sheet Here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/tools.js" defer></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Pokehackia</h1>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="#">Info & Tools</a></li>
+            <li><a href="hacks.html">Rom Hacks</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>About Us</h1>
+        <div class="about-container">
+            <p>In October 2025 we here at Pokehackia set out to make a website that anyone could use to find generation 4 pokemon hacks! 
+                Overtime our mission expanded to also include spreading awareness of publicly available tools for rom hacking and the creation of
+                a monthly newsletter! As long as the generation 4 pokemon games have a dedicated community we will remain as a beacon for new and old
+                members of this community!
+
+            </p>
+            <img src="images/olivine_400x300.png" alt="A group of pokemon">
+        </div>
+
+        <hr>
+
+        <h2>Our Recommended Tools</h2>
+        <div class="tools">
+            <div class="tool-card">
+                <img src="images/dspre.webp" alt="DSPRE icon">
+                <h3>DSPRE Reloaded</h3>
+                <button class="button open-button-dspre">Info</button>
+            </div>
+
+            <div class="tool-card">
+                <img src="images/map-studio.webp" alt="Pokemon DS Map Studio icon">
+                <h3>Pokemon DS Map Studio</h3>
+                <button class="button open-button-map-studio">Info</button>
+            </div>
+
+            <div class="tool-card">
+                <img src="images/btx.webp" alt="BTX Editor 2.0 icon">
+                <h3>BTX Editor 2.0</h3>
+                <button class="button open-button-btx">Info</button>
+            </div>
+        </div>
+
+        <!-- MODALS-->
+        
+        <dialog id="dspre">
+            <h2>DSPRE Reloaded</h2>
+            <p>Author: AdAstra-LD</p>
+            <p>The definitive DS Pokemon game editor! DSPRE Reloaded allows you to extact and edit rom data, and includes features such as matrix editing, trainer editing, script editing and more!</p>
+            <a href="https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor" title="https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor">Visit Site</a>
+            <button class="close-button-dspre">❌</button>
+        </dialog>
+        
+        <dialog id="map-studio">
+            <h2>Pokemon DS Map Studio</h2>
+            <p>Author: Trifindo</p>
+            <p>This tool allows you to make custom maps for you to import into your rom hack. It includes features such as creating custom tilesets, changing map elevation and editing collision data!</p>
+            <a href="https://github.com/Trifindo/Pokemon-DS-Map-Studio" title="https://github.com/Trifindo/Pokemon-DS-Map-Studio">Visit Site</a>
+            <button class="close-button-map-studio">❌</button>
+        </dialog>
+
+        <dialog id="btx">
+            <h2>BTX Editor 2.0</h2>
+            <p>Author: KazoWAR</p>
+            <p>This tool allows you to edit the btx files used for the overworld sprites. This tools is useful for those who want to add custom NPCs to their hack or add new Pokemon sprites!</p>
+            <a href="https://projectpokemon.org/home/forums/topic/8962-btx-editor-20/" title="https://projectpokemon.org/home/forums/topic/8962-btx-editor-20/">Visit Site</a>
+            <button class="close-button-btx">❌</button>
+        </dialog>
+
+
+        <hr>
+    
+        <div class="newsletter-container">
+
+            <div class="promote">
+                <h3>Join Our Newsletter!</h3>
+                <p>Want the latest news on up and coming romhacks?</p>
+                <p>Join our monthly newsletter and recieve exclusive news!</p>
+                <img src="images/mail.webp" alt="A picture of a letter made of pixels">
+
+            </div>
+
+            <div class="sign-up">
+                <form method="GET" action="thankyou.html" class="design-one">
+                <h3>Newsletter Sign up</h3>
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Email <input type="email" name="email" required placeholder="pikachu@email.com"  title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="390-444-3210" ></label>
+                <h3>Choose a Game</h3>
+                <label for="game">Favorite Gen  4 Game
+                <select name="game" id="game" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="Diamond / Pearl">Diamond / Pearl</option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Heartgold / Soulsilver">Heartgold / Soulsilver</option>
+                    <option value="All">All of them!</option>
+                </select>
+                </label>
+                
+                <!--Hidden with js-->
+                <input type="hidden" name="timestamp" id="timestamp">
+            
+                <input type="submit" value="Sign Me Up!">
+            </form>
+        </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>

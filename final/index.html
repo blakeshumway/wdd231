@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--favicon-->
+    <link rel="icon" href="images/favicon-final.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokehackia - Home</title>
+    <meta name="description" content="Pokehackia Home Page">
+    <meta name="author" content="Blake Shumway">
+    <!--Social Media Meta-->
+    <meta property="og:description" content="The Home page for Pokehackia.">
+    <meta property="og:image" content="https://blakeshumway.github.io/wdd231/final/images/favicon-final.ico">
+    <meta property="og:url" content="https://blakeshumway.github.io/wdd231/final/index.html">
+    <meta property="og:title" content="Home - Pokehackia">
+    <!--Style Sheet Here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/index.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Pokehackia</h1>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="tools.html">Info & Tools</a></li>
+            <li><a href="hacks.html">Rom Hacks</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="hero-container">
+            <img class="hero-image" src="images/pokehackia-hero.png" alt="Site Logo">
+
+            <div class="hero-text">
+                <h1>Pokehackia</h1>
+                <p>The perfect place for your generation 4 romhacking needs!</p>
+                <a href="hacks.html">Browse Hacks</a>
+            </div>
+        </div>
+
+        <hr>   
+        
+        <h1>Home</h1>
+
+        <div class="news-container">
+            <div class="news-card">
+                <h3>Recent News</h3>
+                <p>filler</p>
+                <p>filler</p>
+                <p>filler</p>
+                <p>filler</p>
+            </div>
+            <div class="hacks-card">
+                <h3>Latest Hack</h3>
+                <p>Pokemon sp blue edition</p>
+                <p>by ONEYNG</p>
+            </div>
+            <div class="tools-card">
+                <h3>Latest Tool update</h3>
+                <a href="https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor" title="https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor">DSPRE Reloaded 1.11.1</a>
+                <p>Updated: 12/12/23</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Hack Spotlight</h2>
+        <div class="spotlight-container" id="spotlight-container"></div> 
+
+        <hr>
+
+        <div class="newsletter">
+            <h3>Want the latest news on upcoming hacks?</h3>
+            <a href="tools.html">Join our Newsletter!</a>
+        </div>
+
+        <hr>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
