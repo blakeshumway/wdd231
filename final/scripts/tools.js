@@ -13,7 +13,7 @@ const modalBtx = document.querySelector("#btx");
 
 
 //DSPRE
-const openModalDspre = document.querySelector(".open-button-dspre");
+const openModalDspre = document.querySelector("#open-button-dspre");
 const closeModalDspre = document.querySelector(".close-button-dspre");
 
 openModalDspre.addEventListener("click", () => {
@@ -25,7 +25,7 @@ closeModalDspre.addEventListener("click", () => {
 });
 
 //Map Studio
-const openModalMapStudio = document.querySelector(".open-button-map-studio");
+const openModalMapStudio = document.querySelector("#open-button-map-studio");
 const closeModalMapStudio = document.querySelector(".close-button-map-studio");
 
 openModalMapStudio.addEventListener("click", () => {
@@ -37,7 +37,7 @@ closeModalMapStudio.addEventListener("click", () => {
 });
 
 //BTX
-const openModalBtx = document.querySelector(".open-button-btx");
+const openModalBtx = document.querySelector("#open-button-btx");
 const closeModalBtx = document.querySelector(".close-button-btx");
 
 openModalBtx.addEventListener("click", () => {
