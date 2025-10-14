@@ -15,7 +15,7 @@ export const createCards = (roms, container) => {
 
         const link = document.createElement('a');
         link.href = rom.link;
-        link.textContent = "More Info";
+        link.textContent = "Visit Site";
 
         const release = document.createElement('p');
         release.textContent = `Released: ${rom.release}`;

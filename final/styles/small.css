@@ -129,7 +129,9 @@ footer {
 }
 
 footer p {
-    font-size: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
 }
 
 
@@ -143,7 +145,7 @@ footer p {
         "tools"
         ;
     gap: 10px;
-
+    font-size: 1.25rem;
 }
 
 /**Hero Image**/
@@ -231,7 +233,7 @@ footer p {
     font-size: 1.1rem;
 }
 
-.tools-card a:hover {
+.tools-card a:hover, .rom-card a:hover {
     color: red;
 }
 
@@ -334,6 +336,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    margin: 1rem;
 }
 
 .buttons-container button {
@@ -347,6 +350,9 @@ footer p {
     font-size: 1.2rem;
     -webkit-appearance: none;
     appearance: none;
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
 }
 
 .buttons-container button:hover {
