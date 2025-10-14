@@ -525,10 +525,6 @@ dialog[open] a:hover {
 
 
 
-
-
-
-
 /*newsletter container*/
 .newsletter-container {
     display: grid;
@@ -667,18 +663,15 @@ hr {
     text-align: left;
     max-width: 450px;
     justify-self: center;
+    
 }
-/* for description overflow */
-.org-description {
-    word-wrap: break-word;       
-    overflow-wrap: break-word;
-    white-space: normal;         
-}
+
 
 .thank-you {
     text-align: center;
     display: grid;
     justify-content: center;
+    margin: 3rem;
 }
 
 .thank-you h1 {
