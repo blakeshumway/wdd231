@@ -61,19 +61,19 @@
     /*****INDEX*****/
 
 
-.hero-text h1 {
-    font-size: 5rem;
-}
+    .hero-text h1 {
+        font-size: 5rem;
+    }
 
-.hero-text p {
-    font-size: 2rem;
-}
+    .hero-text p {
+        font-size: 2rem;
+    }
 
 
-.hero-text a {
-    text-decoration: none;
-    font-size: 2rem;
-}
+    .hero-text a {
+        text-decoration: none;
+        font-size: 2rem;
+    }
 
 
 
@@ -88,10 +88,7 @@
     }   
 
     /***SPOTLIGHT*****/
-    /*SPOTLIGHT*/
-    .spotlight-container {
-        gap: 1rem; /* spacing between items */
-    }   
+
 
     /****HACKS PAGE****/
     #rom-container {

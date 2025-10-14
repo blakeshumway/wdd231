@@ -125,7 +125,7 @@ main {
 /*****Footer*****/
 footer {
     background-color: #18251D;
-    padding: 1rem 10px;
+    padding: 3rem 10px;
 }
 
 footer p {
@@ -141,8 +141,7 @@ footer p {
         "news"
         "hacks"
         "tools"
-    ;
-
+        ;
     gap: 10px;
 
 }
