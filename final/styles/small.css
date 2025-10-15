@@ -272,10 +272,10 @@ footer {
 .newsletter {
     display: grid;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
     text-align: center;
-    width: 400px;
+    width: 450px;
     justify-self: center;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
