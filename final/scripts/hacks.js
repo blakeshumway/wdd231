@@ -1,3 +1,4 @@
+//IMPORT MODULE
 import { createCards } from './create-cards.mjs';
 
 const container = document.getElementById('rom-container');
@@ -8,12 +9,19 @@ const platinumButton = document.querySelector('#platinum-button');
 const heartgoldButton = document.querySelector('#heartgold-button');
 const allButton = document.querySelector('#all-button');
 
+//Button event listeners
+diamondButton.addEventListener('click', () => getRomData('Diamond'));
+platinumButton.addEventListener('click', () => getRomData('Platinum'));
+heartgoldButton.addEventListener('click', () => getRomData('Heartgold'));
+allButton.addEventListener('click', () => getRomData('all'));
 
 
+//FUNCTION get data based on what filtered is applied
 async function getRomData(filter) {
 
     //get data
     try {
+
         const response = await fetch(romsUrl);
         const data = await response.json();
 
@@ -25,6 +33,7 @@ async function getRomData(filter) {
               createCards(data, container); 
           }
         else {
+          //filter based on version
           const filteredData = data.filter(data => data.version === `${filter}`);
           createCards(filteredData, container);
         }
@@ -39,12 +48,8 @@ async function getRomData(filter) {
 }
 
 
-//Button event listeners
-diamondButton.addEventListener('click', () => getRomData('Diamond'));
-platinumButton.addEventListener('click', () => getRomData('Platinum'));
-heartgoldButton.addEventListener('click', () => getRomData('Heartgold'));
-allButton.addEventListener('click', () => getRomData('all'));
 
+//display all data on load
 getRomData('all');
 
 
