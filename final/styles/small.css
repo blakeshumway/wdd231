@@ -126,13 +126,14 @@ main {
 footer {
     background-color: #18251D;
     padding: 3rem 10px;
-}
-
-footer p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
 }
+
+
+
+
 
 
 /****INDEX****/
@@ -205,7 +206,8 @@ footer p {
 
 .news-container div {
     border: 1px solid #18251D;
-    background-color: #f4eded;
+    background-color: #f9f9f9;
+    border-radius: 10px;
 }
 
 
@@ -219,6 +221,8 @@ footer p {
     margin: 0px;
     margin-bottom: 1rem;
     padding: 1rem;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
 }
 
 .hacks-card {
@@ -268,14 +272,14 @@ footer p {
 .newsletter {
     display: grid;
     justify-content: center;
-    background-color: #e4dbdb;
-    border: 2px solid #e4dbdb;
-    border-radius: 10px;
     padding: 1rem;
     margin: 1rem;
     text-align: center;
     width: 400px;
     justify-self: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .newsletter a {
@@ -327,6 +331,7 @@ footer p {
     border: 5px solid #18251D;
     max-width: 300px;
     justify-self: center;
+    
 }
 
 
@@ -411,12 +416,14 @@ footer p {
 
 .about-container p {
     grid-area: about-us;
-    background-color: #f4eded;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     padding: 1rem;
     font-size: 1.1rem;
     text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 .about-container img {
@@ -438,8 +445,10 @@ footer p {
     display: block;
     justify-content: center;
     text-align: center;
-    background-color: #f4eded;
     padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 .tool-card img {
@@ -544,8 +553,10 @@ dialog[open] a:hover {
 
 .promote {
     grid-area: promote;
-    background-color: #f4eded;
     text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 .promote img {
