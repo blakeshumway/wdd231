@@ -8,28 +8,32 @@ const platinumButton = document.querySelector('#platinum-button');
 const heartgoldButton = document.querySelector('#heartgold-button');
 const allButton = document.querySelector('#all-button');
 
-//const platinumRoms = data.filter(data => data.version === 'Platinum');
 
 
 async function getRomData(filter) {
+
+    //get data
     try {
         const response = await fetch(romsUrl);
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
         const data = await response.json();
 
         container.innerHTML = '';
-        if (filter == 'all') {
-            createCards(data, container); 
-        }
+
+        //process data
+        try {
+          if (filter == 'all') {
+              createCards(data, container); 
+          }
         else {
-        const filteredData = data.filter(data => data.version === `${filter}`);
-        createCards(filteredData, container);
+          const filteredData = data.filter(data => data.version === `${filter}`);
+          createCards(filteredData, container);
         }
-    } catch (error) {
+      }
+      catch (error) {
+        console.error('Unable to process rom data:', error);
+      }
+    } 
+    catch (error) {
         console.error('Failed to fetch rom data:', error);
     }
 }
