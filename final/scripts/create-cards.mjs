@@ -41,4 +41,3 @@ export const createCards = (roms, container) => {
         container.appendChild(card);
     });
 };
-
